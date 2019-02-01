@@ -11,6 +11,7 @@ newWavFile = bin2audio(resultBinFile, ai.SampleRate)
 %part C
 ai = audioinfo(newWavFile);
 [processedsoundData,fs] = audioread(newWavFile,[1 10]*ai.SampleRate); % read audio file
+processedsoundData
 soundsc(processedsoundData, fs)
 
 %part D

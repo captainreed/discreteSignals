@@ -8,8 +8,21 @@ disp(ai)% display audio header structure
 ai = audioinfo(f2name) ;
 disp(ai)% display audio header structure
 
-f1Bin = audio2bin(f1name, ai.SampleRate, 'f1.bin')
-f2Bin = audio2bin(f2name, ai.SampleRate, 'f2.bin')
+f1Bin = audio2bin(f1name, ai.SampleRate, 'f1.bin');
+f2Bin = audio2bin(f2name, ai.SampleRate, 'f2.bin');
+
+outputWav = bin2audio('2channelout.bin', 8000);
+
+% ai = audioinfo(outputWav) ;
+% disp(ai)% display audio header structure
+% [soundData, fs] = audioread(outputWav);
+% soundData;
+% soundsc(soundData)
+
+[processedsoundData,fs] = audioread(outputWav,[1 5]*ai.SampleRate); % read audio file
+processedsoundData
+soundsc(processedsoundData, fs)
+
 
 
 function y = audio2bin(filename, samplerate, outputFileName)
@@ -36,36 +49,48 @@ fwrite(fileID,dim1,'int32');
 dim2 = int32(0)
 fwrite(fileID,dim2,'int32');
 
-disp("file size")
-length(audioData)
-
 fwrite(fileID,audioData,'float');
 fclose(fileID);
 y =outputfilename;
 end
 
+function y = bin2audio(filename, samplerate)
+outputfilename = 'outputAudio.wav';
+%binfile = fopen(filename,'rb');
 
+binaryData = fopen (filename, 'rb' ) ;
+if(binaryData ==-1) fprintf('ERROR : Could not open file'); end
 
-Lab2/Lab2Audio/.vs/Lab2Audio/v15/Browse.VC.opendb
+ndim = fread (binaryData ,1 , 'int' )
+nchan = fread (binaryData ,1 , 'int' )
+dim0 = fread (binaryData ,1 , 'int' )
+dim1 = fread (binaryData ,1 , 'int' )
+dim2 = fread (binaryData ,1 , 'int' )
+nsamples = nchan*dim0*((dim1==0)+dim1)*((dim2==0)+dim2)
 
+x = fread(binaryData, nsamples, 'float');
+fclose(binaryData);
 
+disp("***")
+nchan
+dim0
+length(x)
+nchan*dim0
+disp("****")
 
+if( ndim ==1) % signal
+x = reshape(x, nchan , dim0);
+x = permute(x ,[2 1]) ;
+elseif (ndim ==2) % image
+x = reshape (x,nchan ,dim1 , dim0 ) ;
+x = permute (x ,[3 2 1]) ;
+elseif ( ndim ==3) % video
+x = reshape (x,nchan ,dim1 ,dim0 , dim3 ) ;
+x = permute (x ,[3 2 1 4]) ;
+end
 
-% i = fopen ( ' infile ' , 'rb' ) ;
-% ndim = fread (i ,1 , 'int' ) ;
-% nchan = fread (i ,1 , 'int' ) ;
-% dim0 = fread (i ,1 , 'int' ) ;
-% dim1 = fread (i ,1 , 'int' ) ;
-% dim2 = fread (i ,1 , 'int' ) ;
-% nsamples = nchan * dim0 *(( dim1 ==0) + dim1 ) *(( dim2 ==0) + dim2 ) ;
-% x = fread (i, nsamples , 'float' ) ;
-% if( ndim ==1) % signal
-% x = reshape (x,nchan, dim0) ;
-% x = permute (x ,[2 1]) ;
-% elseif ( ndim ==2) % image
-% x = reshape (x,nchan ,dim1 , dim0 ) ;
-% x = permute (x ,[3 2 1]) ;
-% elseif ( ndim ==3) % video
-% x = reshape (x,nchan ,dim1 ,dim0 , dim3 ) ;
-% x = permute (x ,[3 2 1 4]) ;
-% end
+audiowrite(outputfilename, x, samplerate);
+%audiowrite(outputfilename, x, samplerate, 'BitsPerSample',24);
+y = outputfilename;
+end
+

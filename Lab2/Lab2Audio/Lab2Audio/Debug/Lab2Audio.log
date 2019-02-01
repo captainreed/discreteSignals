@@ -1,2 +1,6 @@
 ﻿  Lab2Audio.cpp
+c:\users\fearl\desktop\school\discrete signals\lab2\lab2audio\lab2audio\lab2audio.cpp(149): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\fearl\desktop\school\discrete signals\lab2\lab2audio\lab2audio\lab2audio.cpp(150): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\fearl\desktop\school\discrete signals\lab2\lab2audio\lab2audio\lab2audio.cpp(151): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\fearl\desktop\school\discrete signals\lab2\lab2audio\lab2audio\lab2audio.cpp(101): warning C4101: 'h2': unreferenced local variable
   Lab2Audio.vcxproj -> C:\Users\fearl\Desktop\School\Discrete Signals\Lab2\Lab2Audio\Debug\Lab2Audio.exe
