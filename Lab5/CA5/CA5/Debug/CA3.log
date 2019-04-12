@@ -1,21 +1,22 @@
 ﻿  main.c
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(38): warning C4098: 'extract': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(43): warning C4098: 'extract': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(48): warning C4098: 'extract': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(90): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(94): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(97): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(98): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(105): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(106): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(88): warning C4101: 'm': unreferenced local variable
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(89): warning C4101: 'pz0': unreferenced local variable
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(125): warning C4098: 'convolution': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(130): warning C4098: 'convolution': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(135): warning C4098: 'convolution': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(209): warning C4098: 'filter': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(214): warning C4098: 'filter': 'void' function returning a value
-c:\users\fearl\desktop\school\discrete signals\lab5\ca3\ca3\main.c(219): warning C4098: 'filter': 'void' function returning a value
-  CA3.vcxproj -> C:\Users\fearl\Desktop\School\Discrete Signals\Lab5\CA3\Debug\CA3.exe
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(38): warning C4098: 'extract': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(43): warning C4098: 'extract': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(48): warning C4098: 'extract': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(90): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(94): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(97): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(98): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(105): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(106): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(108): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(88): warning C4101: 'm': unreferenced local variable
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(89): warning C4101: 'pz0': unreferenced local variable
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(125): warning C4098: 'convolution': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(130): warning C4098: 'convolution': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(135): warning C4098: 'convolution': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(194): warning C4098: 'filter': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(199): warning C4098: 'filter': 'void' function returning a value
+c:\users\fearl\desktop\school\discrete signals\lab5\ca5\ca5\main.c(204): warning C4098: 'filter': 'void' function returning a value
+  CA3.vcxproj -> C:\Users\fearl\Desktop\School\Discrete Signals\Lab5\CA5\CA5\Debug\CA3.exe

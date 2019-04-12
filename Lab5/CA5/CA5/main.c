@@ -17,9 +17,9 @@ int main()
 	printf("delay convolution complete\r\n");
 	convolution("firefly.bin", "hilbert_filter.bin", "hilbertconv.bin");
 	printf("hilbert filter convolution complete\r\n");
-	extract("hilbertconv.bin", "delayconv.bin", "extracted.bin");
+	extract("hilbertconv.bin", "delayconv.bin", "instantaneous.bin");
 	printf("extraction complete\r\n");
-	convolution("extracted.bin", "gaussian_2_filter.bin", "final_product.bin");
+	convolution("instantaneous.bin", "gaussian_2_filter.bin", "final_product.bin");
 	printf("final gaussian filter convolution complete\r\n");
 
 	printf("finished");
@@ -105,7 +105,7 @@ void extract(char *inf1, char *inf2, char *outf) {
 		if (fi > M_PI) { fi -= 2.0*M_PI; }
 		else if (fi < -M_PI) { fi += 2.0*M_PI; }
 		pzold = pz;
-		outSig[i] = pzold;
+		outSig[i] = cos(pz);
 	}
 
 	fwrite(outSig, sizeof(float), ly, fout);
@@ -134,21 +134,6 @@ void convolution(char *inf1, char *inf2, char *outf) {
 		printf("unable to read impulse function file");
 		return 0;
 	}
-	//if (NULL == (fin = fopen("speech.bin", "rb")))
-	//{
-	//	printf("unable to read input file");
-	//	return 0;
-	//}
-	//if (NULL == (fout = fopen("convolvedspeech.bin", "wb")))
-	//{
-	//	printf("unable to write output file");
-	//	return 0;
-	//}
-	//if (NULL == (fimp = fopen("impulse.bin", "rb")))
-	//{
-	//	printf("unable to read impulse function file");
-	//	return 0;
-	//}
 	printf("input file and impulse response read successfully\n");
 
 	int lx, lh, ly, lz;
