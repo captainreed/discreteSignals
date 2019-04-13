@@ -1,0 +1,21 @@
+﻿  main.c
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(38): warning C4098: 'extract': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(43): warning C4098: 'extract': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(48): warning C4098: 'extract': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(90): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(94): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(97): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(98): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(105): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(106): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(88): warning C4101: 'm': unreferenced local variable
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(89): warning C4101: 'pz0': unreferenced local variable
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(125): warning C4098: 'convolution': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(130): warning C4098: 'convolution': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(135): warning C4098: 'convolution': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(194): warning C4098: 'filter': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(199): warning C4098: 'filter': 'void' function returning a value
+c:\users\brandon\desktop\school\discrete signals\lab5\lab5\main.c(204): warning C4098: 'filter': 'void' function returning a value
+  Lab5.vcxproj -> C:\Users\Brandon\Desktop\School\Discrete Signals\Lab5\Debug\Lab5.exe
